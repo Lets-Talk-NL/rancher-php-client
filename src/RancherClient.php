@@ -66,10 +66,10 @@ class RancherClient
      * @param string $endpoint
      * @param array  $params
      *
-     * @return array
+     * @return mixed
      * @throws RancherException
      */
-    public function request(string $type = 'GET', string $endpoint = "", array $params = []): array
+    public function request(string $type = 'GET', string $endpoint = "", array $params = [])
     {
         $response = null;
 
